@@ -1,0 +1,13 @@
+<nav class="site-nav">
+  <div class="container nav-container">
+    {% capture home_url %}{% if page.lang == 'it' %}/it/{% else %}/{% endif %}{% endcapture %}
+    <a href="{{ home_url | relative_url }}" class="logo">
+      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo {{ site.title }}" class="logo-img">
+      <span>{{ site.title }}</span>
+    </a>
+  </div>
+</nav>
+
+<button id="theme-toggle" class="theme-switch-btn" aria-label="Switch theme">
+  <i class="fa-solid fa-sun" id="theme-icon"></i>
+</button>

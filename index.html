@@ -1,0 +1,103 @@
+---
+layout: default
+title: Shopify App Development
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
+
+<header>
+    {% if t.hero_badge %}
+    <div>
+        <span class="dev-badge">
+            <span class="badge-dot"></span>
+            {{ t.hero_badge }}
+        </span>
+    </div>
+    {% endif %}
+    <div class="profile-img">
+        <img src="{{ '/assets/images/fp.jpg' | relative_url }}" alt="Profile Photo">
+    </div>
+    <h1>{{ t.greeting }}</h1>
+    <p class="about-text">
+        {{ t.site_description }}
+        <br>
+        {{ t.about_subtitle }}
+    </p>
+</header>
+
+<section id="share-idea">
+    <h2><i class="fa-regular fa-lightbulb"></i> {{ t.idea_title }}</h2>
+    <p class="idea-description">{{ t.idea_desc }}</p>
+
+    <form id="idea-form" onsubmit="sendIdeaEmail(event)">
+        <div class="form-group">
+            <input type="text" id="idea-name" placeholder="{{ t.placeholder_name }}" class="form-input">
+        </div>
+        <div class="form-group">
+            <textarea id="idea-text" placeholder="{{ t.placeholder_idea }}" rows="5" class="form-input"></textarea>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="idea-terms">
+            <label for="idea-terms">
+                {{ t.agree_to }}
+                {% capture lang_prefix %}{% if lang == 'it' %}/it{% endif %}{% endcapture %}
+                <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html#user-feedback" target="_blank">
+                    {{ t.idea_terms }}
+                </a>
+            </label>
+        </div>
+
+        <button type="submit" class="btn-main">
+            {{ t.btn_continue }} <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+        <div id="ideaErrorMsg" class="error-alert">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span id="ideaErrorText"></span>
+        </div>
+    </form>
+</section>
+
+<script>
+    function sendIdeaEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('idea-name').value.trim();
+        const idea = document.getElementById('idea-text').value.trim();
+        const termsCheckbox = document.getElementById('idea-terms');
+        const errorMsg = document.getElementById('ideaErrorMsg');
+        const errorText = document.getElementById('ideaErrorText');
+
+        // 1. Controllo se il campo dell'idea è vuoto
+        if (idea === "") {
+            errorText.innerHTML = "{{ t.error_empty_idea }}";
+            errorMsg.style.display = 'flex';
+            return;
+        }
+
+        // 2. Controllo se la checkbox è spuntata
+        if (!termsCheckbox.checked) {
+            errorText.innerHTML = "{{ t.error_idea_terms }}";
+            errorMsg.style.display = 'flex';
+            return;
+        }
+
+        // Se entrambi i controlli passano, nasconde il box di errore
+        errorMsg.style.display = 'none';
+
+        let bodyText = "{{ t.email_greeting }} {{ site.author_name }},\n\n{{ t.email_idea_intro }}\n" + idea;
+
+        if (name) {
+            bodyText += "\n\n{{ t.email_salutation }}\n" + name;
+        } else {
+            bodyText += "\n\n{{ t.email_thank_you }}";
+        }
+
+        const subject = encodeURIComponent("{{ t.email_idea_subject }}");
+        const body = encodeURIComponent(bodyText);
+        const devEmail = "{{ site.email }}";
+
+        window.location.href = `mailto:${devEmail}?subject=${subject}&body=${body}`;
+    }
+</script>

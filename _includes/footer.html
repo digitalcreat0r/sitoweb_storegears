@@ -1,0 +1,26 @@
+<footer>
+    <div class="footer-links">
+        {% capture lang_prefix %}{% if page.lang == 'it' %}/it{% else %}{% endif %}{% endcapture %}
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/">{{ t.nav_home }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html">{{ t.nav_terms }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/privacy-policy.html">{{ t.nav_privacy }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/cookie-policy.html">{{ t.nav_cookie }}</a>
+    </div>
+
+    <div class="language-selector">
+        <i class="fa-solid fa-globe"></i>
+        {% if page.lang == "it" %}
+        <a href="{{ page.url | replace: '/it/', '/' | relative_url }}">English</a>
+        <span class="lang-arrow">&#9654;</span> <strong>Italiano</strong>
+        {% else %}
+        <strong>English</strong>
+        <span class="lang-arrow">&#9664;</span> <a href="{{ '/it' | append: page.url | relative_url }}">Italiano</a>
+        {% endif %}
+    </div>
+
+    {% if t.footer_disclaimer %}
+    <p class="footer-disclaimer">{{ t.footer_disclaimer }}</p>
+    {% endif %}
+
+    <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.title }}. {{ t.all_rights_reserved }}</p>
+</footer>

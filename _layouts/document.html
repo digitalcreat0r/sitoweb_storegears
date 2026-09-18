@@ -1,0 +1,21 @@
+---
+layout: default
+body_class: always-light
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
+
+<div class="back-link">
+  {% if page.back_url %}
+  <a href="{{ page.back_url | relative_url }}">
+    <i class="fa-solid fa-arrow-left"></i> {{ page.back_text | default: t.back_to_app | default: "Back" }}
+  </a>
+  {% else %}
+  {% capture home_url %}{% if page.lang == 'it' %}/it/{% else %}/{% endif %}{% endcapture %}
+  <a href="{{ home_url | relative_url }}">
+    <i class="fa-solid fa-arrow-left"></i> {{ t.back_to_home }}
+  </a>
+  {% endif %}
+</div>
+
+{{ content }}

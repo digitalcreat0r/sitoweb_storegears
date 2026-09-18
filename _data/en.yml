@@ -1,0 +1,39 @@
+# General Settings / Header / Footer
+site_description: "Independent developer specializing in building intuitive Shopify apps and custom e-commerce solutions."
+maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
+nav_home: "Home"
+nav_terms: "Terms of Use"
+nav_privacy: "Privacy Policy"
+nav_cookie: "Cookie Policy"
+all_rights_reserved: "All rights reserved."
+back_to_home: "Back to Home"
+back_to_app: "Back to App"
+privacy_policy: "Privacy Policy"
+terms_of_service: "Terms of Service"
+btn_continue: "Continue"
+footer_disclaimer: "Shopify is a trademark of Shopify Inc. CleverPocket Dev is an independent developer and is not affiliated with or endorsed by Shopify Inc."
+
+# Home Page (index.html)
+hero_badge: "Shopify App Developer"
+greeting: "Hi, I'm Oleksandr"
+about_subtitle: "I create specialized Shopify apps to help merchants automate tasks, boost conversions, and grow their stores."
+
+# 404 Page (404.md)
+404_title: "Page Not Found"
+404_subtitle: "Oops! Page not found..."
+404_text: "The page you are looking for doesn't exist, has been moved, or is temporarily unavailable."
+
+# Share Idea Section
+idea_title: "Need a custom Shopify solution or have an app idea?"
+idea_desc: "Have a workflow challenge on Shopify or an app idea that would make running your store easier?<br>Share it with me, I'd love to build it!"
+placeholder_name: "Your name (optional)"
+placeholder_idea: "Describe your store's needs or app idea..."
+agree_to: "I have read and agree to"
+idea_terms: "the Terms for User Feedback and Ideas"
+error_empty_idea: "Please describe your idea before continuing."
+error_idea_terms: "You must agree to the Terms for User Feedback and Ideas to continue."
+email_idea_subject: "Shopify App Idea / Feature Request"
+email_idea_intro: "I have an idea/request for a Shopify app:"
+email_greeting: "Hello"
+email_salutation: "Best regards,"
+email_thank_you: "Thank you!"

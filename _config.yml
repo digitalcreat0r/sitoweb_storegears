@@ -1,0 +1,30 @@
+# Informazioni sul Sito
+title: CleverPocket&nbsp;Dev
+author: Oleksandr Bihansky
+author_name: Oleksandr
+brand: CleverPocket&nbsp;Dev
+email: info@cleverpocket.app
+support_email: support@cleverpocket.app
+
+# URL e Link
+url: "https://cleverpocket.app"
+baseurl: "" # Lascialo vuoto se il sito è nel dominio principale
+
+# Impostazioni di Build
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+
+# Per google search
+plugins:
+  - jekyll-sitemap
+
+# Banner di Manutenzione, mettere su true durante la manutenzione, altrimenti su false
+maintenance_mode: false

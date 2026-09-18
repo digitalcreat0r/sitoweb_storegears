@@ -1,0 +1,85 @@
+:root {
+    /* --- TEMA DARK (Default) - Modern Obsidian & Shopify Mint --- */
+    --primary-color: #00A47C;
+    --primary-hover: #008060;
+    --primary-accent: #00D084;
+    --accent-color: #00D084;
+    --primary-color-rgb: 0, 164, 124;
+    --primary-glow: 0 0 24px rgba(0, 164, 124, 0.28);
+    
+    --bg-color: #0B0F19;
+    --bg-gradient: radial-gradient(circle at 50% -20%, rgba(0, 164, 124, 0.12) 0%, rgba(11, 15, 25, 0) 60%), #0B0F19;
+    --card-bg: rgba(19, 27, 46, 0.85);
+    --card-border: rgba(255, 255, 255, 0.08);
+    --card-hover-border: rgba(0, 208, 132, 0.3);
+    
+    --text-main: #F8FAFC;
+    --text-muted: #94A3B8;
+    --text-subtle: #64748B;
+    
+    --step-bg: rgba(30, 41, 59, 0.8);
+    --border-color: rgba(255, 255, 255, 0.1);
+    
+    --radius-sm: 8px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    
+    --shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.06);
+    --shadow-hover: 0 16px 40px -4px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 208, 132, 0.2);
+}
+
+/* --- TEMA LIGHT - Shopify Polaris Crisp Light --- */
+body.light-mode {
+    --primary-color: #008060;
+    --primary-hover: #006E52;
+    --primary-accent: #00A47C;
+    --accent-color: #008060;
+    --primary-color-rgb: 0, 128, 96;
+    --primary-glow: 0 0 20px rgba(0, 128, 96, 0.2);
+    
+    --bg-color: #F6F8FA;
+    --bg-gradient: radial-gradient(circle at 50% -20%, rgba(0, 128, 96, 0.08) 0%, rgba(246, 248, 250, 0) 60%), #F6F8FA;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
+    --card-hover-border: rgba(0, 128, 96, 0.4);
+    
+    --text-main: #1A1D1F;
+    --text-muted: #5C6F84;
+    --text-subtle: #8C9BAE;
+    
+    --step-bg: #F0FDF4;
+    --border-color: #E2E8F0;
+    
+    --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+    --shadow-hover: 0 14px 35px -5px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 128, 96, 0.2);
+}
+
+/* --- TEMA SEMPRE CHIARO (Per Policy e Documenti) --- */
+body.always-light {
+    --primary-color: #008060;
+    --primary-hover: #006E52;
+    --primary-accent: #00A47C;
+    --accent-color: #008060;
+    --primary-color-rgb: 0, 128, 96;
+    --primary-glow: 0 0 20px rgba(0, 128, 96, 0.2);
+    
+    --bg-color: #F6F8FA;
+    --bg-gradient: #F6F8FA;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
+    --card-hover-border: rgba(0, 128, 96, 0.4);
+    
+    --text-main: #1A1D1F;
+    --text-muted: #5C6F84;
+    --text-subtle: #8C9BAE;
+    
+    --step-bg: #F0FDF4;
+    --border-color: #E2E8F0;
+    
+    --shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.05);
+}
+
+body.always-light .theme-switch-btn {
+    display: none;
+}

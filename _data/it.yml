@@ -1,0 +1,39 @@
+# Impostazioni Generali / Header / Footer
+site_description: "Sviluppatore indipendente specializzato nella creazione di app Shopify intuitive e soluzioni e-commerce su misura."
+maintenance_message: "Manutenzione in corso. Alcune funzionalità potrebbero essere temporaneamente non disponibili."
+nav_home: "Home"
+nav_terms: "Termini di Utilizzo"
+nav_privacy: "Informativa sulla Privacy"
+nav_cookie: "Cookie Policy"
+all_rights_reserved: "Tutti i diritti riservati."
+back_to_home: "Torna alla Home"
+back_to_app: "Torna all'app"
+privacy_policy: "Informativa sulla Privacy"
+terms_of_service: "Termini di Servizio"
+btn_continue: "Continua"
+footer_disclaimer: "Shopify è un marchio registrato di Shopify Inc. CleverPocket Dev è uno sviluppatore indipendente e non è affiliato né sponsorizzato da Shopify Inc."
+
+# Home Page (index.html)
+hero_badge: "Sviluppatore App Shopify"
+greeting: "Ciao, sono Oleksandr"
+about_subtitle: "Sviluppo applicazioni dedicate per Shopify pensate per aiutare i merchant ad automatizzare processi, aumentare le conversioni e far crescere il proprio negozio."
+
+# Pagina 404 (404.md)
+404_title: "Pagina non trovata"
+404_subtitle: "Oops! Pagina non trovata..."
+404_text: "La pagina che stai cercando non esiste, è stata spostata o è temporaneamente non disponibile."
+
+# Sezione Condividi Idea
+idea_title: "Hai un'esigenza specifica o un'idea per un'app Shopify?"
+idea_desc: "Condividi una sfida quotidiana sul tuo store Shopify o una funzionalità che ti semplificherebbe la gestione.<br>Raccontamela: potrei sviluppare la soluzione adatta!"
+placeholder_name: "Il tuo nome (facoltativo)"
+placeholder_idea: "Descrivi qui le esigenze del tuo store o la tua idea..."
+agree_to: "Ho letto e accetto"
+idea_terms: "i Termini per Feedback e Idee degli Utenti"
+error_empty_idea: "Per favore, descrivi la tua idea prima di continuare."
+error_idea_terms: "Devi accettare i Termini per Feedback e Idee degli Utenti per proseguire."
+email_idea_subject: "Idea per app Shopify / Richiesta funzionalità"
+email_idea_intro: "Ho un'idea/richiesta per un'app Shopify:"
+email_greeting: "Ciao"
+email_salutation: "Cordiali saluti,"
+email_thank_you: "Grazie!"
