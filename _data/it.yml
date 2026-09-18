@@ -1,5 +1,5 @@
 # Impostazioni Generali / Header / Footer
-site_description: "Sviluppatore indipendente specializzato nella creazione di app Shopify intuitive e soluzioni e-commerce su misura."
+site_description: "Sviluppatore indipendente specializzato nella creazione di app Shopify intuitive su misura."
 maintenance_message: "Manutenzione in corso. Alcune funzionalità potrebbero essere temporaneamente non disponibili."
 nav_home: "Home"
 nav_terms: "Termini di Utilizzo"
@@ -11,7 +11,7 @@ back_to_app: "Torna all'app"
 privacy_policy: "Informativa sulla Privacy"
 terms_of_service: "Termini di Servizio"
 btn_continue: "Continua"
-footer_disclaimer: "Shopify è un marchio registrato di Shopify Inc. CleverPocket Dev è uno sviluppatore indipendente e non è affiliato né sponsorizzato da Shopify Inc."
+footer_disclaimer: "Shopify è un marchio registrato di Shopify Inc. StoreGears è uno sviluppatore indipendente e non è affiliato né sponsorizzato da Shopify Inc."
 
 # Home Page (index.html)
 hero_badge: "Sviluppatore App Shopify"

@@ -1,5 +1,5 @@
 # General Settings / Header / Footer
-site_description: "Independent developer specializing in building intuitive Shopify apps and custom e-commerce solutions."
+site_description: "Independent developer specializing in building intuitive Shopify apps."
 maintenance_message: "Maintenance in progress. Some features may be temporarily unavailable."
 nav_home: "Home"
 nav_terms: "Terms of Use"
@@ -11,7 +11,7 @@ back_to_app: "Back to App"
 privacy_policy: "Privacy Policy"
 terms_of_service: "Terms of Service"
 btn_continue: "Continue"
-footer_disclaimer: "Shopify is a trademark of Shopify Inc. CleverPocket Dev is an independent developer and is not affiliated with or endorsed by Shopify Inc."
+footer_disclaimer: "Shopify is a trademark of Shopify Inc. StoreGears is an independent developer and is not affiliated with or endorsed by Shopify Inc."
 
 # Home Page (index.html)
 hero_badge: "Shopify App Developer"
