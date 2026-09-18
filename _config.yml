@@ -1,13 +1,13 @@
 # Informazioni sul Sito
-title: CleverPocket&nbsp;Dev
+title: StoreGears
 author: Oleksandr Bihansky
 author_name: Oleksandr
-brand: CleverPocket&nbsp;Dev
+brand: StoreGears
 email: info@cleverpocket.app
 support_email: support@cleverpocket.app
 
 # URL e Link
-url: "https://cleverpocket.app"
+url: "https://storegears.com"
 baseurl: "" # Lascialo vuoto se il sito è nel dominio principale
 
 # Impostazioni di Build
