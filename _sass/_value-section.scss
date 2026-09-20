@@ -71,7 +71,7 @@
 
 .value-keyword {
     display: block;
-    font-size: 1.12rem;
+    font-size: 1.32rem;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: var(--text-main);
@@ -89,13 +89,13 @@
 .value-badge {
     display: inline-flex;
     align-items: center;
-    font-size: 0.78rem;
+    font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--primary-color);
     background: rgba(var(--primary-color-rgb), 0.1);
     border: 1px solid rgba(var(--primary-color-rgb), 0.22);
-    padding: 5px 11px;
+    padding: 6px 13px;
     border-radius: var(--radius-full);
 }
 

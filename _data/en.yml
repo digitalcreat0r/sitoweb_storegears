@@ -48,7 +48,7 @@ value_pillars:
     badge: "Save time"
   - icon: "fa-solid fa-bolt"
     keyword: "Simplicity"
-    text: "Clear setup, no clutter, no steep learning curve. You install, configure, and get back to selling — convenience that shows up every day."
+    text: "Clear setup, no clutter, no steep learning curve. You install, configure, and get back to selling, convenience that shows up every day."
     badge: "Easy to run"
   - icon: "fa-solid fa-sliders"
     keyword: "Customization"
