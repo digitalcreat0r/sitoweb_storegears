@@ -1,0 +1,17 @@
+<section id="value-pillars" aria-labelledby="value-pillars-title">
+    <h2 id="value-pillars-title">{{ t.value_title }}</h2>
+    <p class="value-description">{{ t.value_desc }}</p>
+
+    <div class="value-grid">
+        {% for item in t.value_pillars %}
+        <article class="value-card">
+            <div class="value-card-icon" aria-hidden="true">
+                <i class="{{ item.icon }}"></i>
+            </div>
+            <span class="value-keyword">{{ item.keyword }}</span>
+            <p class="value-card-text">{{ item.text }}</p>
+            <span class="value-badge">{{ item.badge }}</span>
+        </article>
+        {% endfor %}
+    </div>
+</section>
