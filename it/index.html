@@ -28,6 +28,14 @@ lang: it
     <h2><i class="fa-regular fa-lightbulb"></i> {{ t.idea_title }}</h2>
     <p class="idea-description">{{ t.idea_desc }}</p>
 
+    <details class="idea-reward">
+        <summary>
+            <span class="idea-reward-label">{{ t.idea_reward_label }}</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+        </summary>
+        <p>{{ t.idea_reward_text }}</p>
+    </details>
+
     <form id="idea-form" onsubmit="sendIdeaEmail(event)">
         <div class="form-group">
             <input type="text" id="idea-name" placeholder="{{ t.placeholder_name }}" class="form-input">

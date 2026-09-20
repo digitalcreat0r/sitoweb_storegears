@@ -26,6 +26,8 @@ about_subtitle: "I create specialized Shopify\u00a0apps to help merchants automa
 # Share Idea Section
 idea_title: "Need a custom Shopify solution or have an app idea?"
 idea_desc: "Have a workflow challenge on Shopify or an app idea that would make running your store easier?<br>Share it with me, I'd love to build it!"
+idea_reward_label: "Reward"
+idea_reward_text: "If the idea is a good fit and the app is published, you get lifetime free access to that app."
 placeholder_name: "Your name (optional)"
 placeholder_idea: "Describe your store's needs or app idea..."
 agree_to: "I have read and agree to"
