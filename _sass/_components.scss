@@ -84,6 +84,13 @@
         width: 40px;
         height: 40px;
         font-size: 1.05rem;
+
+        &:hover {
+            transform: none;
+            border-color: var(--border-color);
+            box-shadow: var(--shadow);
+            color: var(--text-main);
+        }
     }
 
     .theme-switch-btn.scrolled {
