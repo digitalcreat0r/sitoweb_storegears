@@ -10,11 +10,11 @@
     <div class="language-selector">
         <i class="fa-solid fa-globe"></i>
         {% if page.lang == "it" %}
-        <a href="{{ page.url | replace: '/it/', '/' | relative_url }}">English</a>
+        <a class="lang-switch-link" href="{{ page.url | replace: '/it/', '/' | relative_url }}">English</a>
         <span class="lang-arrow">&#9654;</span> <strong>Italiano</strong>
         {% else %}
         <strong>English</strong>
-        <span class="lang-arrow">&#9664;</span> <a href="{{ '/it' | append: page.url | relative_url }}">Italiano</a>
+        <span class="lang-arrow">&#9664;</span> <a class="lang-switch-link" href="{{ '/it' | append: page.url | relative_url }}">Italiano</a>
         {% endif %}
     </div>
 

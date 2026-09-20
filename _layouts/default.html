@@ -38,6 +38,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script>
+        (function () {
+            try {
+                if (sessionStorage.getItem('langSwitchScroll') && 'scrollRestoration' in history) {
+                    history.scrollRestoration = 'manual';
+                }
+            } catch (e) {}
+        })();
+    </script>
 </head>
 <body class="{{ page.body_class }} {{ layout.body_class }} {% if site.maintenance_mode and page.hide_maintenance != true %}maintenance-on{% endif %}">
 
@@ -66,6 +75,69 @@
         <i class="fa-solid fa-xmark"></i>
     </button>
 </div>
+
+<script>
+    (function () {
+        var STORAGE_KEY = 'langSwitchScroll';
+
+        function scrollMax() {
+            return Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        }
+
+        function saveScrollRatio() {
+            try {
+                sessionStorage.setItem(STORAGE_KEY, String(window.scrollY / scrollMax()));
+            } catch (e) {}
+        }
+
+        function restoreScrollRatio() {
+            var raw;
+            try {
+                raw = sessionStorage.getItem(STORAGE_KEY);
+            } catch (e) {
+                return false;
+            }
+            if (raw === null) return false;
+
+            var ratio = parseFloat(raw);
+            if (isNaN(ratio)) {
+                try { sessionStorage.removeItem(STORAGE_KEY); } catch (e) {}
+                return false;
+            }
+
+            window.scrollTo(0, ratio * scrollMax());
+            return true;
+        }
+
+        window.navigateWithScroll = function (url) {
+            saveScrollRatio();
+            var target = new URL(url, window.location.href);
+            if (window.location.hash) target.hash = window.location.hash;
+            window.location.href = target.href;
+        };
+
+        document.addEventListener('click', function (event) {
+            var link = event.target.closest('a.lang-switch-link');
+            if (!link) return;
+            event.preventDefault();
+            window.navigateWithScroll(link.href);
+        });
+
+        function restoreThenClear() {
+            restoreScrollRatio();
+            try { sessionStorage.removeItem(STORAGE_KEY); } catch (e) {}
+        }
+
+        if (restoreScrollRatio()) {
+            if (document.readyState === 'complete') {
+                restoreThenClear();
+            } else {
+                document.addEventListener('DOMContentLoaded', restoreScrollRatio);
+                window.addEventListener('load', restoreThenClear);
+            }
+        }
+    })();
+</script>
 
 <script>
     // Logica Banner Lingua
@@ -117,7 +189,7 @@
                 const targetLink = document.querySelector(`link[hreflang="${target}"]`);
                 if (targetLink) {
                     localStorage.setItem('langBannerDismissed', 'true');
-                    window.location.href = targetLink.href;
+                    navigateWithScroll(targetLink.href);
                 }
             });
         }
