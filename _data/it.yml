@@ -11,7 +11,7 @@ back_to_app: "Torna all'app"
 privacy_policy: "Informativa sulla Privacy"
 terms_of_service: "Termini di Servizio"
 btn_continue: "Continua"
-footer_disclaimer: "Shopify è un marchio registrato di Shopify Inc. StoreGears è uno sviluppatore indipendente e non è affiliato né sponsorizzato da Shopify Inc."
+footer_disclaimer: "Shopify è un marchio registrato di Shopify\u00a0Inc. StoreGears è uno sviluppatore indipendente e non è affiliato né sponsorizzato da Shopify\u00a0Inc."
 
 # Home Page (index.html)
 hero_badge: "Sviluppatore App Shopify"
@@ -39,8 +39,8 @@ email_salutation: "Cordiali saluti,"
 email_thank_you: "Grazie!"
 
 # Pilastri di valore
-value_title: "Pensato per chi gestisce uno store Shopify e vuole risultati, non lavoro in più"
-value_desc: "Ogni app è pensata per farti risparmiare tempo, proteggere il negozio e restare semplice da usare — così resti sulle vendite, non sul software."
+value_title: "Pensato per chi gestisce uno\u00a0store\u00a0Shopify e vuole risultati, non lavoro in più"
+value_desc: "Ogni app è pensata per farti risparmiare tempo, proteggere il negozio e restare semplice da usare, così resti sulle vendite, non sul software."
 value_pillars:
   - icon: "fa-solid fa-clock"
     keyword: "Automazione"

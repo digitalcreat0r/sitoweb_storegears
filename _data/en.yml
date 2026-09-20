@@ -11,12 +11,12 @@ back_to_app: "Back to App"
 privacy_policy: "Privacy Policy"
 terms_of_service: "Terms of Service"
 btn_continue: "Continue"
-footer_disclaimer: "Shopify is a trademark of Shopify Inc. StoreGears is an independent developer and is not affiliated with or endorsed by Shopify Inc."
+footer_disclaimer: "Shopify is a trademark of Shopify\u00a0Inc. StoreGears is an independent developer and is not affiliated with or endorsed by Shopify\u00a0Inc."
 
 # Home Page (index.html)
 hero_badge: "Shopify App Developer"
 greeting: "Hi, I'm Oleksandr"
-about_subtitle: "I create specialized Shopify apps to help merchants automate tasks, boost conversions, and grow their stores."
+about_subtitle: "I create specialized Shopify\u00a0apps to help merchants automate tasks, boost conversions, and grow their stores."
 
 # 404 Page (404.md)
 404_title: "Page Not Found"
@@ -39,8 +39,8 @@ email_salutation: "Best regards,"
 email_thank_you: "Thank you!"
 
 # Value pillars
-value_title: "Built for Shopify merchants who want results, not extra work"
-value_desc: "Every app is designed to save time, protect your store, and stay simple to use — so you can focus on sales, not on software."
+value_title: "Built for Shopify\u00a0merchants who want results, not extra work"
+value_desc: "Every app is designed to save time, protect your store, and stay simple to use, so you can focus on sales, not on software."
 value_pillars:
   - icon: "fa-solid fa-clock"
     keyword: "Automation"
