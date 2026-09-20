@@ -26,7 +26,7 @@ body.always-light .site-nav {
     gap: clamp(8px, 2.5vw, 12px);
     text-decoration: none;
     color: var(--text-main);
-    font-size: clamp(1.375rem, 6.05vw, 1.76rem);
+    font-size: clamp(1.625rem, 7.15vw, 2.08rem);
     font-weight: 800;
     letter-spacing: -0.03em;
     white-space: nowrap;
@@ -40,7 +40,7 @@ body.always-light .site-nav {
 }
 
 .logo-img {
-    height: clamp(37px, 8.8vw, 46px);
+    height: clamp(44px, 10.4vw, 55px);
     width: auto;
     border-radius: 8px;
     flex-shrink: 0;
