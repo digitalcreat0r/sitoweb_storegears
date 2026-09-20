@@ -54,8 +54,10 @@ textarea.form-input {
     -webkit-backdrop-filter: blur(16px);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
-    &:hover {
-        border-color: var(--card-hover-border);
+    @media (hover: hover) {
+        &:hover {
+            border-color: var(--card-hover-border);
+        }
     }
 
     h1, h2 {

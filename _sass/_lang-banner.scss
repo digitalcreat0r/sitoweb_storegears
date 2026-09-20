@@ -53,9 +53,11 @@
     border-radius: 50%;
     transition: all 0.2s ease;
 
-    &:hover {
-        color: var(--text-main);
-        background: rgba(255, 255, 255, 0.08);
+    @media (hover: hover) {
+        &:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.08);
+        }
     }
 }
 
@@ -96,10 +98,12 @@
         text-align: center;
         white-space: nowrap;
 
-        &:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 14px rgba(var(--primary-color-rgb), 0.45);
-            filter: brightness(1.05);
+        @media (hover: hover) {
+            &:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 4px 14px rgba(var(--primary-color-rgb), 0.45);
+                filter: brightness(1.05);
+            }
         }
 
         &:active {
