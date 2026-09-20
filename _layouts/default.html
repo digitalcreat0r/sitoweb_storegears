@@ -156,17 +156,19 @@
             updateIcon(isLight);
         });
 
-        window.addEventListener('scroll', () => {
-            if (window.innerWidth <= 600) {
-                if (window.scrollY > 50) {
-                    themeToggle.classList.add('scrolled');
+        if (body.classList.contains('maintenance-on')) {
+            window.addEventListener('scroll', () => {
+                if (window.innerWidth <= 600) {
+                    if (window.scrollY > 50) {
+                        themeToggle.classList.add('scrolled');
+                    } else {
+                        themeToggle.classList.remove('scrolled');
+                    }
                 } else {
                     themeToggle.classList.remove('scrolled');
                 }
-            } else {
-                themeToggle.classList.remove('scrolled');
-            }
-        });
+            });
+        }
     }
 </script>
 
