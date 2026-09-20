@@ -90,11 +90,11 @@ header {
 }
 
 .profile-img {
-    width: 104px;
-    height: 104px;
+    width: 125px;
+    height: 125px;
     margin: 0 auto 20px;
     overflow: hidden;
-    border-radius: 28px;
+    border-radius: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +108,7 @@ header {
         height: 100%;
         object-fit: cover;
         display: block;
-        border-radius: 25px;
+        border-radius: 30px;
     }
 }
 
@@ -140,9 +140,9 @@ header h1 {
         font-size: 1rem;
     }
     .profile-img {
-        width: 90px;
-        height: 90px;
-        border-radius: 22px;
-        img { border-radius: 19px; }
+        width: 108px;
+        height: 108px;
+        border-radius: 26px;
+        img { border-radius: 23px; }
     }
 }
