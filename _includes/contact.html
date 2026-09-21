@@ -2,7 +2,7 @@
 {% assign t = site.data[lang] %}
 {% capture home_url %}{% if lang == 'it' %}/it/{% else %}/{% endif %}{% endcapture %}
 <section id="contact" aria-labelledby="contact-title">
-    <h2 id="contact-title"><i class="fa-regular fa-envelope"></i> {{ t.contact_title }}</h2>
+    <h2 id="contact-title">{{ t.contact_title }}</h2>
     <p class="contact-description">{{ t.contact_desc }}</p>
 
     <div class="contact-grid">
@@ -24,7 +24,7 @@
             </div>
             <h3 class="contact-card-title">{{ t.contact_info_title }}</h3>
             <p class="contact-card-text">{{ t.contact_info_text }}</p>
-            <a class="btn-outline" href="mailto:{{ site.email }}?subject={{ t.email_info_subject | uri_escape }}">
+            <a class="btn-main" href="mailto:{{ site.email }}?subject={{ t.email_info_subject | uri_escape }}">
                 {{ t.contact_info_cta }} <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
