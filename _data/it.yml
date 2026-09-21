@@ -64,7 +64,7 @@ value_pillars:
 
 # Contatti
 contact_title: "Serve aiuto o hai una domanda?"
-contact_desc: "Per problemi con un'app, fatturazione o configurazione scrivi al supporto. Per tutto il resto usa la casella generale."
+contact_desc: "Per problemi con un'app, fatturazione o configurazione scrivi al supporto. Per tutto il resto usa la casella informazioni."
 contact_support_title: "Supporto app"
 contact_support_text: "Bug, installazione, fatturazione o problemi durante l'uso. Indica il nome dell'app e una breve descrizione di cosa succede."
 contact_support_cta: "Scrivi al supporto"
