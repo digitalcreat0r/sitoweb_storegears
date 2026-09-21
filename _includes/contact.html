@@ -1,0 +1,38 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data[lang] %}
+{% capture home_url %}{% if lang == 'it' %}/it/{% else %}/{% endif %}{% endcapture %}
+<section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title"><i class="fa-regular fa-envelope"></i> {{ t.contact_title }}</h2>
+    <p class="contact-description">{{ t.contact_desc }}</p>
+
+    <div class="contact-grid">
+        <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3 class="contact-card-title">{{ t.contact_support_title }}</h3>
+            <p class="contact-card-text">{{ t.contact_support_text }}</p>
+            <a class="btn-main" href="mailto:{{ site.support_email }}?subject={{ t.email_support_subject | uri_escape }}">
+                {{ t.contact_support_cta }} <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="contact-email" href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>
+        </article>
+
+        <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">
+                <i class="fa-regular fa-comments"></i>
+            </div>
+            <h3 class="contact-card-title">{{ t.contact_info_title }}</h3>
+            <p class="contact-card-text">{{ t.contact_info_text }}</p>
+            <a class="btn-outline" href="mailto:{{ site.email }}?subject={{ t.email_info_subject | uri_escape }}">
+                {{ t.contact_info_cta }} <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </article>
+    </div>
+
+    <p class="contact-idea-hint">
+        {{ t.contact_idea_hint }}
+        <a href="{{ home_url | relative_url }}#share-idea">{{ t.contact_idea_link }}</a>
+    </p>
+</section>

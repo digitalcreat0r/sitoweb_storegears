@@ -2,9 +2,16 @@
     <div class="footer-links">
         {% capture lang_prefix %}{% if page.lang == 'it' %}/it{% else %}{% endif %}{% endcapture %}
         <a href="{{ site.baseurl }}{{ lang_prefix }}/">{{ t.nav_home }}</a>
+        <a href="{{ site.baseurl }}{{ lang_prefix }}/contact.html">{{ t.nav_contact }}</a>
         <a href="{{ site.baseurl }}{{ lang_prefix }}/terms-of-use.html">{{ t.nav_terms }}</a>
         <a href="{{ site.baseurl }}{{ lang_prefix }}/privacy-policy.html">{{ t.nav_privacy }}</a>
         <a href="{{ site.baseurl }}{{ lang_prefix }}/cookie-policy.html">{{ t.nav_cookie }}</a>
+    </div>
+
+    <div class="footer-contact">
+        <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a>
+        <span class="footer-contact-sep" aria-hidden="true">·</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
 
     <div class="language-selector">
