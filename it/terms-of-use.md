@@ -5,7 +5,7 @@ lang: it
 ---
 # Termini e Condizioni - {{ site.brand }}
 
-*Ultimo aggiornamento: 14 settembre 2026*
+*Ultimo aggiornamento: 22 settembre 2026*
 
 L'utilizzo del sito web, delle applicazioni e dei servizi forniti da **{{ site.brand }}**, sviluppati e gestiti da **{{ site.author }}** ("lo sviluppatore"), comporta l'accettazione dei seguenti termini. Si prega di leggerli attentamente.
 
@@ -22,9 +22,18 @@ Viene concessa una licenza limitata, non trasferibile e non esclusiva per l'util
 - Utilizzare il sito web o le applicazioni per attività illecite o in violazione dei termini delle piattaforme ospitanti (quali il Shopify Partner Program Agreement o le policy di utilizzo accettabile).
 
 <h2 id="user-feedback">3. Feedback e Idee dell'Utente</h2>
-I feedback e le idee per nuove funzionalità o applicazioni future sono sempre benvenuti! Tuttavia, per evitare potenziali incomprensioni, qualora vengano inviati commenti, suggerimenti o idee tramite i moduli di contatto del sito o via email, l'utente accetta che:
-- L'invio è del tutto volontario e avviene senza alcuna aspettativa di compenso, presente o futuro.
-- L'utente concede allo sviluppatore una licenza perpetua, irrevocabile, globale e priva di royalty per utilizzare, modificare, implementare e commercializzare tali idee nei prodotti attuali o futuri, senza alcun obbligo di compenso o attribuzione nei confronti dell'utente.
+I feedback e le idee per nuove funzionalità o applicazioni future sono sempre benvenuti. Qualora vengano inviati commenti, suggerimenti o idee tramite i moduli di contatto del sito o via email, l'utente accetta che:
+- L'invio è del tutto volontario.
+- L'utente concede allo sviluppatore una licenza perpetua, irrevocabile, globale e priva di royalty per utilizzare, modificare, implementare e commercializzare tali idee nei prodotti attuali o futuri, senza alcun obbligo di attribuzione.
+- L'invio di un'idea non crea, di per sé, un diritto a pagamento, partecipazione societaria, partnership o a qualsiasi compenso diverso dalla ricompensa descritta di seguito.
+
+**Ricompensa per un'app pubblicata.** Se lo sviluppatore, a propria esclusiva discrezione, crea e pubblica un'applicazione Shopify basata sull'idea inviata, l'utente può ricevere accesso gratuito a vita a quella specifica applicazione come ricompensa, alle seguenti condizioni:
+- La ricompensa riguarda solo l'applicazione pubblicata basata sull'idea, non altri prodotti attuali o futuri.
+- L'accesso gratuito dura per tutta la vita di quella applicazione su Shopify ed è limitato a un singolo store Shopify indicato dall'utente.
+- Dopo aver deciso di pubblicare, lo sviluppatore contatterà l'utente e chiederà il dominio Shopify dello store (`tuostore.myshopify.com`) necessario per attivare la ricompensa. Se non viene fornito un dominio store valido, la ricompensa non può essere attivata.
+- La ricompensa è personale e non trasferibile. Non può essere venduta, ceduta o applicata ad altri store, salvo diverso accordo scritto dello sviluppatore.
+- La ricompensa non include sviluppi su misura, pagamenti in denaro né un supporto diverso da quello standard dell'applicazione.
+- Restano applicabili le regole della piattaforma Shopify, i sistemi di fatturazione e i termini specifici dell'applicazione. Se l'applicazione viene ritirata, l'accesso gratuito cessa insieme ad essa.
 
 ## 4. Esclusione di Garanzia
 Il sito web e le applicazioni sono forniti "così come sono" (as is), senza garanzie di alcun tipo. Lo sviluppatore non garantisce che le applicazioni o il sito web soddisfino tutte le specifiche esigenze dell'utente, siano completamente privi di errori o funzionino senza interruzioni.

@@ -5,7 +5,7 @@ lang: it
 ---
 # Informativa sulla Privacy - {{ site.brand }}
 
-*Ultimo aggiornamento: 14 settembre 2026*
+*Ultimo aggiornamento: 22 settembre 2026*
 
 Benvenuto su **{{ site.brand }}**. La presente Informativa sulla Privacy è rilasciata da **{{ site.author }}** ("lo sviluppatore") e spiega come vengono raccolti, utilizzati e protetti i dati personali dell'utente quando visita questo sito web o si mette in contatto per condividere feedback, richieste di supporto e nuove idee. La privacy dell'utente è una priorità e lo sviluppatore si impegna a proteggere i suoi dati personali.
 
@@ -28,6 +28,7 @@ Lo sviluppatore utilizza le informazioni raccolte esclusivamente per le seguenti
 - Rispondere a richieste, domande o richieste di assistenza dell'utente.
 - Valutare i suggerimenti dell'utente per nuove funzionalità o applicazioni Shopify.
 - Inviare risposte pertinenti in merito alle idee o richieste inoltrate.
+- Contattare l'utente quando un'app pubblicata può essere offerta come ricompensa di accesso a vita, e usare i dati dello store forniti esclusivamente per abilitare tale accesso.
 
 *Lo sviluppatore non venderà, noleggerà né scambierà in alcun modo i dati personali dell'utente con terze parti per scopi di marketing.*
 
@@ -38,7 +39,7 @@ Questo sito web utilizza cookie minimi e strettamente necessari al suo funzionam
 Lo sviluppatore può condividere i dati dell'utente con fornitori di servizi terzi di fiducia esclusivamente nella misura necessaria allo svolgimento delle attività operative (ad esempio, fornitori di hosting email). Tali fornitori sono vincolati da severi accordi di riservatezza e non sono autorizzati a utilizzare i dati dell'utente per scopi propri.
 
 ## 6. Conservazione dei Dati
-Lo sviluppatore conserva le informazioni personali dell'utente solo per il tempo strettamente necessario a gestire adeguatamente la domanda o il feedback, o come richiesto dalle normative vigenti.
+Lo sviluppatore conserva le informazioni personali dell'utente solo per il tempo strettamente necessario a gestire adeguatamente la domanda o il feedback, o come richiesto dalle normative vigenti. I dati di contatto e il dominio Shopify dello store forniti per abilitare l'accesso a vita possono essere conservati per il tempo necessario a mantenere attivo tale accesso.
 
 ## 7. Diritti dell'Utente (GDPR e CCPA)
 In base alla propria posizione geografica, l'utente gode di diritti specifici riguardo ai propri dati personali. L'utente ha il diritto di:

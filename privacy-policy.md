@@ -4,7 +4,7 @@ title: Privacy Policy
 ---
 # Privacy Policy - {{ site.brand }}
 
-*Last updated: September 14, 2026*
+*Last updated: September 22, 2026*
 
 Welcome to **{{ site.brand }}**. This Privacy Policy is issued by **{{ site.author }}** ("the developer") and explains how personal data is collected, used, and safeguarded when you visit this website or initiate contact to share feedback, support requests, and new ideas. Your privacy is respected and the developer is committed to protecting your personal data.
 
@@ -27,6 +27,7 @@ The developer uses the collected information exclusively for the following purpo
 - To respond to your inquiries, questions, or support requests.
 - To evaluate your suggestions for new Shopify features or applications.
 - To send you relevant replies regarding the ideas or inquiries you submitted.
+- To contact you when a published app can be offered as a lifetime-access reward, and to use the store details you provide solely to enable that access.
 
 *The developer will never sell, rent, or trade your personal data with third parties for marketing purposes.*
 
@@ -37,7 +38,7 @@ This website uses minimal cookies strictly necessary for its core functionality.
 The developer may share your data with trusted third-party service providers only to the extent necessary to run operations (for example, email hosting providers). These providers are bound by strict confidentiality agreements and are not permitted to use your data for their own purposes.
 
 ## 6. Data Retention
-The developer retains your personal information only for as long as necessary to adequately address your inquiry or feedback, or as required by applicable laws.
+The developer retains your personal information only for as long as necessary to adequately address your inquiry or feedback, or as required by applicable laws. Contact details and the Shopify store domain provided to enable a lifetime-access reward may be retained for as long as needed to keep that access active.
 
 ## 7. Your Rights (GDPR & CCPA)
 Depending on your location, you have specific rights regarding your personal data. You have the right to:

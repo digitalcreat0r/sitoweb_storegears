@@ -4,7 +4,7 @@ title: Terms and Conditions
 ---
 # Terms and Conditions - {{ site.brand }}
 
-*Last updated: September 14, 2026*
+*Last updated: September 22, 2026*
 
 By using the website, applications, and services provided by **{{ site.brand }}**, developed and managed by **{{ site.author }}** ("the developer"), you agree to the following terms. Please read them carefully.
 
@@ -21,9 +21,18 @@ A limited, non-transferable, and non-exclusive license is granted to use the web
 - Use the website or applications for any unlawful activities or in violation of platform terms (such as the Shopify Partner Program Agreement or Acceptable Use Policy).
 
 <h2 id="user-feedback">3. User Feedback and Ideas</h2>
-Feedback and ideas for new features or future applications are always welcome! However, to avoid potential misunderstandings, if comments, suggestions, or ideas are submitted via website contact forms or emails, you agree that:
-- The submission is entirely voluntary and made without expectation of compensation, now or in the future.
-- You grant the developer a perpetual, irrevocable, worldwide, royalty-free license to use, modify, implement, and commercialize those ideas in current or future products without any obligation or attribution to you.
+Feedback and ideas for new features or future applications are always welcome. If comments, suggestions, or ideas are submitted via website contact forms or emails, you agree that:
+- The submission is entirely voluntary.
+- You grant the developer a perpetual, irrevocable, worldwide, royalty-free license to use, modify, implement, and commercialize those ideas in current or future products, without any obligation of attribution.
+- Submitting an idea does not, by itself, create a right to payment, equity, partnership, or any compensation other than the reward described below.
+
+**Reward for a published app.** If the developer, at their sole discretion, creates and publishes a Shopify application based on your submitted idea, you may receive lifetime free access to that specific application as a reward, subject to the following:
+- The reward applies only to the published application based on your idea, not to other current or future products.
+- Complimentary access lasts for the life of that application on Shopify and is limited to a single Shopify store that you designate.
+- After deciding to publish, the developer will contact you and ask for the Shopify store domain (`yourstore.myshopify.com`) needed to enable the reward. If you do not provide a valid store domain, the reward cannot be activated.
+- The reward is personal and non-transferable. It may not be sold, gifted, or applied to additional stores unless the developer agrees in writing.
+- The reward does not include custom development, cash payment, or support beyond the application’s standard support.
+- Shopify’s platform rules, billing systems, and the application’s own terms still apply. If the application is discontinued, complimentary access ends with it.
 
 ## 4. Disclaimer of Warranties
 The website and applications are provided "as is" without any warranties of any kind. The developer does not guarantee that the applications or website will meet all of your specific requirements, be completely error-free, or operate without interruption.
