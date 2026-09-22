@@ -1,0 +1,30 @@
+---
+description: Stack Jekyll StoreGears, struttura repo e qualità del codice
+alwaysApply: true
+---
+
+# StoreGears — contesto
+
+Sito statico Jekyll (GitHub Pages): landing bilingue EN/IT, contatto, policy.
+Obiettivo: semantico, accessibile, performante, SEO-ready. Niente React, Vue, Tailwind o bundler se non chiesto.
+
+## Mappa
+
+- Config: `_config.yml` (`site.title`, `site.brand`, `site.author`, `site.email`, `site.url`, `maintenance_mode`)
+- EN in root; IT in `it/` con `lang: it`
+- UI copy: `_data/en.yml` + `_data/it.yml` (chiavi identiche)
+- Layout: `_layouts/default.html`, `_layouts/document.html` (policy, `always-light`)
+- Include: `_includes/`. Stili: `_sass/` → `assets/css/style.scss`
+- URL: `relative_url` / `absolute_url`. Asset: `assets/images/`
+
+## Qualità
+
+- Diff minimi: niente refactor estetico, file extra o commenti ovvi
+- Classi BEM-light esistenti: `idea-flow`, `nav-container`, `btn-main`
+- a11y e i18n prima della decorazione
+- Non committare segreti. Non inventare URL/app Shopify. Disclaimer footer: nessuna affiliazione Shopify
+- Banner manutenzione: non bypassare tranne `hide_maintenance: true`
+
+## Prima di chiudere UI
+
+YAML EN+IT allineati; pagina IT se EN è pubblica; footer/hreflang/lang-switch ok; niente copy hardcoded; token CSS + contrasto + focus + alt; theme toggle e maintenance banner intatti. Verifica EN/IT, dark/light, ~375 e ~1280. Policy: solo light.

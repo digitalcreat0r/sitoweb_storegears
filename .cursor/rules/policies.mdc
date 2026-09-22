@@ -1,0 +1,13 @@
+---
+description: Pagine legali EN/IT, layout document e interpolazione brand
+globs: "**/{privacy-policy,cookie-policy,terms-of-use}*.md,policies/**/*.md"
+alwaysApply: false
+---
+
+# Policy e documenti
+
+- Layout `document` → `body_class: always-light` (niente theme toggle)
+- EN in root, IT in `it/`: stessi articoli e stessi impegni, non riassunti diversi
+- Data "Last updated" / "Ultimo aggiornamento" solo se il cambio è sostanziale, e allineata in entrambe le lingue
+- Brand, autore, email, URL da `_config.yml`: `{{ site.brand }}`, `{{ site.author }}`, `{{ site.email }}`, `{{ site.url }}`
+- Policy per-app (es. ScreenRest) restano in `policies/`; non mescolarle con le policy del sito

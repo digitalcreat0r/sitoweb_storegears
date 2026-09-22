@@ -1,0 +1,28 @@
+---
+description: Token CSS, temi dark/light e parziali SCSS StoreGears
+globs: "**/*.{scss,css}"
+alwaysApply: false
+---
+
+# SCSS / UI
+
+Token solo in `_sass/_variables.scss`:
+
+- `:root` = dark default
+- `body.light-mode` = tema utente
+- `body.always-light` = policy/documenti
+
+Nei parziali usa `var(--primary-color)`, `var(--card-bg)`, `var(--radius)`, `var(--shadow)` — niente hex sparsi.
+
+```scss
+/* BAD */
+.card { background: #131B2E; border-radius: 14px; }
+
+/* GOOD */
+.card { background: var(--card-bg); border-radius: var(--radius); }
+```
+
+- Nuovo blocco UI → `_sass/_nome.scss` + `@import` in `assets/css/style.scss`
+- Mobile-first; breakpoint ~600px se già usato nel file vicino
+- Transizioni 150–300ms; `prefers-reduced-motion` per animazioni non essenziali
+- Palette mint Shopify-adjacent, radius, glow, glass card: non ridisegnare il brand

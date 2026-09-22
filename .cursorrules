@@ -1,0 +1,4 @@
+# StoreGears — Cursor rules
+
+Le regole operative sono in `.cursor/rules/` (file `.mdc` per area).
+Non duplicare qui: `core.mdc` è always-on; le altre si attivano sui file aperti (i18n, markup, SCSS, JS, policy).

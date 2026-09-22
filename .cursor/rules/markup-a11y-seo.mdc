@@ -1,0 +1,15 @@
+---
+description: HTML semantico, accessibilità e SEO per layout, include e pagine
+globs: "**/{_includes,_layouts}/**/*.html,**/*.{html,md}"
+alwaysApply: false
+---
+
+# Markup, a11y, SEO
+
+- Semantica: `header`, `nav`, `section` con titolo, `footer`, `aside`. Un `h1` per pagina; h2–h3 senza salti
+- Sezioni: `aria-labelledby` (vedi `_includes/share-idea.html`)
+- `button` = azione; `a` = navigazione. Form: `type="submit"`. Icon-only: `aria-label`
+- `img`: `alt` descrittivo e localizzato; logo con brand. Lazy (`loading="lazy"`) tranne LCP (profilo/logo above the fold)
+- Contrasto WCAG AA con token `--text-main` / `--text-muted` su `--bg-color` / `--card-bg`. Focus visibile
+- Meta in `default.html`: title, description, OG, Twitter, JSON-LD. Nuove pagine: `title` (+ `description` se utile) nel front matter
+- Non rimuovere `jekyll-sitemap`

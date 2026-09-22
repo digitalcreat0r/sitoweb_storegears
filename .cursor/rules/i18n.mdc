@@ -1,0 +1,24 @@
+---
+description: I18n EN/IT, YAML speculari, prefissi lingua e lang-switch
+globs: "**/{_data,_includes,_layouts,it}/**/*.{yml,html,md},**/*.{html,md,yml}"
+alwaysApply: false
+---
+
+# I18n
+
+Ogni template: `{% assign lang = page.lang | default: "en" %}` e `{% assign t = site.data[lang] %}`.
+Niente stringhe UI hardcoded in HTML/include. Policy lunghe restano nei `.md` della lingua giusta.
+
+```liquid
+{% comment %} BAD {% endcomment %}
+<h1>Hi, I'm Oleksandr</h1>
+
+{% comment %} GOOD {% endcomment %}
+<h1>{{ t.greeting }}</h1>
+```
+
+- Nuova chiave in `en.yml` → stessa chiave, stesso ordine in `it.yml`
+- Nuova pagina EN pubblica → duplica in `it/`, `lang: it`, stesso `layout`, titolo localizzato
+- Link interni: `/` vs `/it`. Footer: `lang_prefix` come in `_includes/footer.html`
+- Switch lingua: classe `lang-switch-link` (preserva lo scroll via `navigateWithScroll`)
+- `hreflang` en / it / x-default in `default.html` deve restare allineato alle URL

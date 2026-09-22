@@ -1,0 +1,23 @@
+---
+description: Vanilla JS inline — tema, lingua, form, storage sicuro
+globs: "**/{_includes,_layouts}/**/*.html,**/*.{html,js}"
+alwaysApply: false
+---
+
+# JavaScript
+
+Vanilla JS: IIFE o `DOMContentLoaded`. Niente jQuery, bundler o nuovi CDN. Inter e Font Awesome sono già nel layout.
+
+- `localStorage` / `sessionStorage`: sempre `try/catch` (Safari privato)
+- Tema: chiave `theme`, classe `light-mode` su `body`
+- Banner lingua: `langBannerDismissed`
+- Cambio lingua: riusa `navigateWithScroll` in `default.html`, non duplicare lo scroll
+- Form idea: validazione client, `mailto` con subject/body da `t.*`; errori da YAML, non stringhe inglesi fisse
+
+```javascript
+// BAD
+localStorage.setItem('theme', 'light');
+
+// GOOD
+try { localStorage.setItem('theme', 'light'); } catch (e) {}
+```
