@@ -1,9 +1,9 @@
 ---
 layout: document
-title: Termini di Utilizzo
+title: Termini e Condizioni
 lang: it
 ---
-# Termini di Utilizzo - {{ site.brand }}
+# Termini e Condizioni - {{ site.brand }}
 
 *Ultimo aggiornamento: 14 settembre 2026*
 
@@ -12,7 +12,7 @@ L'utilizzo del sito web, delle applicazioni e dei servizi forniti da **{{ site.b
 *(Nota: I presenti termini si applicano all'uso di questo sito web e ai servizi generali. Le singole applicazioni Shopify pubblicate dallo sviluppatore possono essere soggette a specifici termini di utilizzo dedicati e a informative sulla privacy specifiche).*
 
 ## 1. Accettazione dei Termini e Requisiti di Idoneità
-Accedendo al sito web o installando e utilizzando le applicazioni e i servizi forniti dallo sviluppatore, l'utente accetta di essere vincolato dai presenti Termini di Utilizzo e dall'Informativa sulla Privacy del sito.
+Accedendo al sito web o installando e utilizzando le applicazioni e i servizi forniti dallo sviluppatore, l'utente accetta di essere vincolato dai presenti Termini e Condizioni e dall'Informativa sulla Privacy del sito.
 
 L'utente dichiara di avere la capacità giuridica per stipulare un contratto vincolante o di avere l'autorizzazione necessaria per rappresentare la propria attività/negozio nell'utilizzo di tali servizi.
 
@@ -39,5 +39,5 @@ Lo sviluppatore si riserva il diritto di modificare i presenti termini in qualsi
 I presenti termini sono regolati e interpretati in conformità con le leggi dello Stato Italiano, senza dare effetto a eventuali principi di conflitto di leggi.
 
 ## 8. Contatti
-Per qualsiasi domanda relativa ai presenti Termini di Utilizzo, è possibile contattare lo sviluppatore all'indirizzo:<br>
+Per qualsiasi domanda relativa ai presenti Termini e Condizioni, è possibile contattare lo sviluppatore all'indirizzo:<br>
 **{{ site.email }}**

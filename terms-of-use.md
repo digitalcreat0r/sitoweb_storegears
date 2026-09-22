@@ -1,8 +1,8 @@
 ---
 layout: document
-title: Terms of Use
+title: Terms and Conditions
 ---
-# Terms of Use - {{ site.brand }}
+# Terms and Conditions - {{ site.brand }}
 
 *Last updated: September 14, 2026*
 
@@ -11,7 +11,7 @@ By using the website, applications, and services provided by **{{ site.brand }}*
 *(Note: These terms apply to your use of this website and general services. Individual Shopify applications published by the developer may also be subject to their own specific end-user terms and individual privacy policies).*
 
 ## 1. Acceptance of Terms & Eligibility
-By accessing the website or installing and using the applications and services provided by the developer, you agree to be bound by these Terms of Use and the website's Privacy Policy.
+By accessing the website or installing and using the applications and services provided by the developer, you agree to be bound by these Terms and Conditions and the website's Privacy Policy.
 
 You represent that you are of legal age to form a binding contract, or that you have obtained authorization to represent your business or store in using these services.
 
