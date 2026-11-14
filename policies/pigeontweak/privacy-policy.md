@@ -1,6 +1,7 @@
 ---
 layout: document
 title: Privacy Policy - PigeonTweak
+permalink: /policies/privacy-policy-pigeontweak.html
 back_url: /
 back_text: Back to Home
 ---

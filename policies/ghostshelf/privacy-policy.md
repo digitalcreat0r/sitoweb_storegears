@@ -1,6 +1,7 @@
 ---
 layout: document
 title: Privacy Policy - GhostShelf
+permalink: /policies/privacy-policy-ghostshelf.html
 back_url: /
 back_text: Back to Home
 ---

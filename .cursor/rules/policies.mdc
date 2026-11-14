@@ -7,7 +7,9 @@ alwaysApply: false
 # Policy e documenti
 
 - Layout `document` → `body_class: always-light` (niente theme toggle)
-- EN in root, IT in `it/`: stessi articoli e stessi impegni, non riassunti diversi
+- EN e IT: stessi articoli e stessi impegni, non riassunti diversi. Sul sito, IT sta in `it/`; sulle app, EN e IT stanno insieme in `policies/<app>/`
 - Data "Last updated" / "Ultimo aggiornamento" solo se il cambio è sostanziale, e allineata in entrambe le lingue
 - Brand, autore, email, URL da `_config.yml`: `{{ site.brand }}`, `{{ site.author }}`, `{{ site.email }}`, `{{ site.url }}`
-- Policy per-app (es. ScreenRest) restano in `policies/`; non mescolarle con le policy del sito
+- Policy del sito: `privacy-policy.md` e `it/privacy-policy.md`. Non mescolarle con le policy delle app
+- Policy per-app: `policies/<app>/`, slug minuscolo (`ghostshelf`, `pigeontweak`). Dentro: `privacy-policy.md` (EN) e `privacy-policy_it.md` (IT); stessi nomi per terms e cookie
+- Permalink espliciti, stabili anche se il file si sposta: EN `/policies/privacy-policy-<app>.html`, IT `/it/policies/privacy-policy-<app>.html`
