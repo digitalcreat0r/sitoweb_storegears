@@ -9,89 +9,62 @@ back_text: Back to Home
 
 *Last updated: November 24, 2026*
 
-**PigeonTweak** is an application for Shopify merchants, developed and managed by **{{ site.author }}** ("the developer"), operating as **{{ site.brand }}**. It lets a signed-in customer correct the shipping address on an order from the order status page or the thank-you page, while the merchant's edit window is still open and the order can still be changed. The country on the address stays the same. This policy explains what data the app accesses, why, and how it is handled.
+**PigeonTweak** is an application for Shopify merchants, developed and managed by **{{ site.author }}** ("the developer"), operating as **{{ site.brand }}**. It lets a signed-in customer correct the shipping address on an order from the order status page or the thank-you page, while your edit window is still open and the order can still be changed. The country on the address stays the same. This policy explains what data the app accesses, why, and how long it is kept.
 
-## 1. Data Controller
-For the contact and support data described in this policy, the data controller is:
+## 1. Who is responsible for the data
+For store data and for customer data that PigeonTweak reads or updates in your Shopify store (a customer's name, shipping address, and phone number on an order), you (the merchant) are the data controller. The developer acts as a data processor and handles that data only to provide the service you installed.
 
-**{{ site.author }} ({{ site.brand }})**
+For contact and support data (for example, when you email us), the data controller is **{{ site.author }} ({{ site.brand }})**, {{ site.email }}.
 
-Email: {{ site.email }}<br>
-Website: {{ site.url }}
+## 2. Data the app accesses
+PigeonTweak processes customer data only so that a customer who owns an order can correct its shipping address, and so you can be told that the address changed. It does not build a customer list and does not read customer email addresses.
 
-For store data and for customer data that PigeonTweak reads or updates in your Shopify store (including a customer's name, shipping address, and phone number on an order), you (the merchant) are the data controller. The developer acts as a data processor and handles that data only to provide the service you have installed.
+When you install the app, you grant these access scopes:
 
-## 2. Information Collection
-PigeonTweak processes personal information about your customers only so a customer who owns an order can correct that order's shipping address, and so you can be told that the address changed. It does not build a customer list, and it does not read customer email addresses from Shopify.
+- **`read_orders`:** Reads the order the customer is viewing: order name and id, status, creation date, fulfillment status, order total, and the current shipping address (name, company, street, city, province, postal code, country, phone).
+- **`write_orders`:** Saves the new shipping address on that order. The app does not change line items, discounts, or products.
+- **`read_customers`:** Confirms that the signed-in customer owns the order. The app does not read email addresses, marketing preferences, or other profile data.
+- **`read_merchant_managed_fulfillment_orders` and `read_third_party_fulfillment_orders`:** Check whether a fulfillment request has already been sent. If it has, the address can no longer be changed.
+- **`write_app_proxy`:** Lets the order form call the app through your shop domain.
 
-### Store and order data accessed through Shopify
-When you install the app, you grant it the following access scopes:
+The app also reads your shop name, shop domain, store email address, and time zone. The store email is where merchant notices are sent, and the time zone is used for your quiet hours.
 
-- **`read_orders`:** Used to read the order the customer is viewing: order name and id, status, creation date, fulfillment status, order total, and the current shipping address (name, company, street, city, province, postal code, country, and phone).
-- **`write_orders`:** Used only to save the shipping address the customer submits back onto that order. The app does not change line items, discounts, or products.
-- **`read_customers`:** Used to identify the signed-in customer and confirm that this customer owns the order. The app does not read a customer's email address, marketing preferences, or other profile data.
-- **`read_merchant_managed_fulfillment_orders` and `read_third_party_fulfillment_orders`:** Used to read whether a fulfillment request has already been sent. Once it has, the address can no longer be changed.
-- **`write_app_proxy`:** Used so the order form can call the app through your shop domain.
+The signed-in customer submits the new address (name, company, street, city, province or state, postal code, and phone, depending on the fields you enable). You provide your settings in the app: whether corrections are on, the edit window, the form fields, and your email and quiet-hours preferences.
 
-Name, shipping address, and phone are protected customer data. The app requests them only for this correction flow.
+## 3. Data the app stores and for how long
+- **Settings and sessions:** Kept while the app is installed. Sessions contain your shop domain, access credentials, and granted scopes. For an online staff session, they also contain the staff member's Shopify user id, name, and email.
+- **Correction count:** A daily count of successful corrections (shop domain, date, number). It contains no order, name, address, or phone. Deleted after about 30 days.
+- **Temporary holds:** If a correction changes the order total, the app keeps the previous address and the notice (including name and phone) for a few minutes so the customer can undo the change. Notices delayed by your quiet hours are kept until sent. Deleted once handled, and no later than 90 days.
+- **Access record:** When a customer's name, address, or phone is read, saved, exported, or deleted, the app logs the shop domain, order id, action, and customer id. It does not store the name, address, or phone. Deleted after 90 days.
+- **Support emails:** If you contact us, we keep your name, email, and shop domain only as long as needed to answer, unless the law requires longer.
 
-The app also reads your shop name, shop domain, store email address, and time zone. The store email is where merchant notices are sent, and the time zone is used to apply your quiet hours.
+Apart from the temporary holds, the app keeps no copy of the shipping address. It stays on the order in Shopify, which you control.
 
-### Data the customer provides
-The signed-in customer may submit a new shipping address (first name, last name, company, street address, city, province or state, postal code, and phone, depending on the fields you enable). The app checks the order and your settings, then writes the address to the order in Shopify.
+**Uninstall and privacy requests:** When you uninstall PigeonTweak, the app deletes the data it holds for your store. The access record is deleted when Shopify sends `shop/redact`, about 48 hours later. The app also handles Shopify's mandatory privacy webhooks (`customers/data_request`, `customers/redact`, and `shop/redact`).
 
-### Data you provide in the app
-Your settings: whether corrections are enabled, the edit window, which address fields the form shows, and your email notice and quiet-hours preferences.
+## 4. Merchant notices and third parties
+If merchant notices are on, the app emails your store email address when an address changes. The message includes the order name, the previous and new address (including name and phone), and, if the order total changed, the previous and new total.
 
-### Data generated by the app
-- **Correction count:** A daily count of successful corrections for your shop (shop domain, date, count). It contains no order id, name, address, or phone. It is deleted after about 30 days.
-- **Temporary holds:** If a correction changes the order total, the app keeps the previous address and the notice (including name and phone) for a few minutes so the customer can undo the change. Notices delayed by your quiet hours are kept until they are sent. These are deleted once handled, and no later than 90 days.
-- **Access record:** The app records when a customer's name, address, or phone is read, saved, exported, or deleted (shop domain, order id, action, and customer id). It does not store the name, address, or phone. It is deleted after 90 days.
-- **Technical records:** Authentication sessions for your shop (shop domain, access token, granted scopes, and, for an online staff session, the staff member's Shopify user id, name, and email), and a daily count of test emails.
-
-### Support and feedback (voluntary)
-If you contact the developer by email, you may provide your name, email address, and shop domain. This information is used only to respond to your request and resolve technical issues.
-
-### Analytics, advertising, and tracking
-PigeonTweak does **not** use third-party analytics tools, advertising trackers, or profiling. It does not sell or share your data, or your customers' data, for marketing purposes.
-
-## 3. Merchant notices
-If merchant notices are on, the app emails your store email address when an address changes. The message includes the order name, the previous and new address (including name and phone), and, if the order total changed, the previous and new total. Email is sent through **Resend** (resend.com), which processes this data only to deliver the message. See the [Resend Privacy Policy](https://resend.com/legal/privacy-policy).
-
-## 4. Third-party services
-- **Shopify:** PigeonTweak runs inside the Shopify admin and on the order status and thank-you pages. Shopify processes data according to its own [Privacy Policy](https://www.shopify.com/legal/privacy). The shipping address is stored on the order in Shopify.
-- **Resend:** Merchant notice delivery, as described above.
+- **Shopify:** PigeonTweak runs inside the Shopify admin and on the order status and thank-you pages. Shopify processes data under its [Privacy Policy](https://www.shopify.com/legal/privacy).
+- **Resend:** Delivers merchant notices only. See the [Resend Privacy Policy](https://resend.com/legal/privacy-policy).
 - **Hosting:** The app is hosted on Fly.io. Its database is a SQLite file on an encrypted volume in the United States (Chicago).
 
-## 5. Data storage, security, and retention
-Data is stored on an encrypted volume and transmitted over encrypted connections (HTTPS). Access is limited to the developer. The developer applies reasonable security measures, but no system is completely secure and absolute security cannot be guaranteed.
+PigeonTweak does not use third-party analytics, advertising trackers, or profiling. It does not sell or share your data, or your customers' data, for marketing, and it makes no automated decisions with legal effects.
 
-- **Active use:** Settings and sessions are kept while the app is installed. Other data is kept for the periods stated in Section 2.
-- **Uninstall:** When you uninstall PigeonTweak, the app deletes the data it holds for your store. The access record is deleted when Shopify sends `shop/redact`, about 48 hours later.
-- **Shopify privacy requests:** The app handles Shopify's mandatory privacy webhooks (`customers/data_request`, `customers/redact`, and `shop/redact`). It provides or deletes the customer data it holds when asked.
-- **No lasting copy of addresses:** Apart from the temporary holds in Section 2, the app does not keep a copy of the shipping address. It remains on the order in Shopify, which you control.
-- **Support emails:** Kept only as long as needed to handle your request, unless a longer period is required by law.
+## 5. Security and international transfers
+Data is stored on an encrypted volume, sent over HTTPS, and accessible only to the developer. No system is completely secure, so absolute security cannot be guaranteed. If a security incident exposes customer name, address, phone, or order data, the developer contains it, notifies Shopify at [security@shopify.com](mailto:security@shopify.com) within 24 hours, and notifies affected merchants as required by law.
 
-## 6. Security incidents
-The developer is responsible for containing a security incident that exposes customer name, shipping address, phone number, or order data processed by the app. If the developer becomes aware of such an incident, the developer contains it and notifies Shopify at [security@shopify.com](mailto:security@shopify.com) within 24 hours. Affected merchants are notified as required by applicable law.
+Data may be processed outside your country, including in the United States and outside the European Economic Area. Where this happens, appropriate safeguards (such as Standard Contractual Clauses) are applied as required by law.
 
-## 7. International data transfers
-The developer and the service providers listed above may process data outside your own country, including in the United States and outside the European Economic Area. Where this happens, appropriate safeguards (such as Standard Contractual Clauses) are applied as required by applicable law.
+## 6. Your rights
+Under the GDPR, the UK GDPR, the CCPA/CPRA, and other applicable laws, you have the right to access, correct, delete, restrict, or export your data and to object to its processing. You can also lodge a complaint with your local data protection authority.
 
-## 8. Compliance and rights
-In accordance with the GDPR, the UK GDPR, the CCPA/CPRA, and other applicable privacy laws, data subjects have the right to access, correct, delete, restrict, or export their data, and to object to its processing.
+- **Your store data:** Change your settings in the app at any time, or uninstall the app to delete your data. Contact us for other requests.
+- **Your customers' data:** You are the data controller, so a customer should contact your store about an order. You can also write to us with your shop domain.
 
-- **Your store data:** Change your settings in the app at any time, or uninstall the app to delete your data. Contact the developer for other requests.
-- **Your customer's data:** You are the data controller for customer order data. A customer should contact your store about an order. You can also contact the developer at the email address below with your shop domain. Requests are answered within 30 days.
+We answer requests within 30 days. PigeonTweak is a business tool and is not directed at children.
 
-PigeonTweak does not sell or share personal information, and it does not make automated decisions that have legal or similarly significant effects. You also have the right to lodge a complaint with your local data protection authority.
+## 7. Changes and contact
+This policy may be updated from time to time. The "Last updated" date shows the latest revision. Significant changes will be communicated through the app or by email.
 
-## 9. Children's privacy
-PigeonTweak is a business tool for Shopify merchants and is not directed at children. The developer does not knowingly collect personal information from anyone under 16 years of age beyond the shipping details a customer submits on an order the merchant already holds.
-
-## 10. Changes to this policy
-This policy may be updated from time to time. The "Last updated" date at the top shows the latest revision. Significant changes will be communicated through the app or by email.
-
-## 11. Contact information
-If you have any questions regarding your privacy, please contact the developer at:<br>
-**{{ site.email }}**
+Questions about your privacy: **{{ site.email }}**
